@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "camera-img-metadata",
+    "slug": "camera-img-metadata",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
