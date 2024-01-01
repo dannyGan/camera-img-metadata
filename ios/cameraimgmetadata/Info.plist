@@ -52,6 +52,10 @@
   <key>UIStatusBarStyle</key>
   <string>UIStatusBarStyleDefault</string>
   <key>CADisableMinimumFrameDurationOnPhone</key>
+  <key>NSCameraUsageDescription</key>
+	<string>Your message to the user about why you need the camera</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Your message to the user about why you need the microphone (if recording audio)</string>
   <true/>
 </dict>
 </plist>

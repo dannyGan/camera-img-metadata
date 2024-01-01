@@ -5,6 +5,40 @@
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
+    ],
+    "android": {
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "ios": {
+      "permissions": {
+        "mediaLibrary": {
+          "access": "read_write"
+        }
+      },
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to capture images.",
+        "NSPhotoLibraryUsageDescription": "This app requires access to the photo library for saving images."
+      }
+    },
+    "plugins": [
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow $(camera-img-metadata) to access your photos.",
+          "savePhotosPermission": "Allow $(camera-img-metadata) to save photos.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(camera-img-metadata) to use your location."
+        }
+      ]
     ]
   }
 }
